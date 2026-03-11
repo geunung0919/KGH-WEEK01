@@ -363,4 +363,8 @@ print(tuple([1,2,3]))
 print(type("a,b,c"))
 print(type(a))
 
-#
+#간단한 삽입형 함수 생성
+sum = lambda a,b : a+b
+
+print(sum(3,5))
+
