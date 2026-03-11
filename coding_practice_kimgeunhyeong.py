@@ -70,4 +70,13 @@ print(d.rstrip())
 print(d.strip())
 
 #문자열 수정(불가능)
-a = pi
+a = "pithon"
+#a[1] = 'y' #오류 발생
+
+#문자열 나누기
+print(a.split())
+
+b = "a,b,c,d"
+print(b)
+print(b.split(','))
+
