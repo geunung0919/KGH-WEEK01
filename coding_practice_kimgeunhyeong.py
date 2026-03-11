@@ -370,3 +370,4 @@ print(sum(3,5))
 
 #최대, 최솟값 반환
 print(max([1,4,2,8,6]))
+print(max("Python"))
