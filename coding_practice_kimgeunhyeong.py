@@ -433,3 +433,22 @@ for i in range(6,11):
     data = '%d번째 줄 추가 입니다. \n' % i
     f.write(data)
 f.close()
+
+#파일 모드 'r' - readline()
+f = open('example.txt', 'r')
+
+
+while True:
+    line = f.readline()
+    if not line: break
+    print(line)
+
+f.close()
+
+#파일 모드 'r' - readlines()
+f = open('example.txt', 'r')
+lines = f.readline()
+print(lines)
+
+for line in lines:
+    
