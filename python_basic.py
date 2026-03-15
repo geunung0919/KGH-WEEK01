@@ -41,4 +41,4 @@ print(b)
 
 print(a[4:6])
 print(a[19:])
-print
+print(a[:3])
