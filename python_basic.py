@@ -42,3 +42,67 @@ print(b)
 print(a[4:6])
 print(a[19:])
 print(a[:3])
+print(a[7:-11])
+
+# 문자 개수 계산
+a = "Python"
+print(a.count('P'))
+
+# 문자 위치 확인
+print(a.find('y'))
+print(a.find('p'))
+print(a.index('y'))
+#print(a.index('p')) #오류발생
+
+# 문자 삽입
+b = ","
+c = b.join('Abcd')
+print(c)
+
+# 대소문자 변환
+print(a.upper())
+print(a.lower())
+
+#공백 제거
+d = "         py          "
+print(d.lstrip())
+print(d.rstrip())
+print(d.strip())
+
+# 문자열 수정 (불가능)
+a = "Pithon"
+#a[1] = 'y' #오류발생
+
+# 문자열 바꾸기 
+a = "Python is difficult."
+print(a.replace("difficult", "funny"))
+print(a)
+
+# 문자열 나누기
+print(a.split())
+
+b = "a,b,c,d"
+print(b)
+print(b.split(','))
+
+#리스트 만들기
+a = [1,2,3]
+b = ['Life', 'is', 'too', 'short']
+c = [1,2. 'Life', 'is']
+d = [1,2,[3,4],['Life','is']]
+
+#리스트 인덱싱
+print(d[0])
+print(d[2])
+print(d[3][-1])
+
+#리스트 슬라이싱
+print(d[0:3])
+
+# 리스트 연결
+print(a+b)
+print(b[0] + " hi~^^;")
+#print(a[0] + "hi~ ^^;") #오류발생
+
+#리스트 반복
+print(a * 3)
