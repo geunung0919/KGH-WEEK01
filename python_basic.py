@@ -217,3 +217,98 @@ for key,value in dic.items():
 #원소 삭제
 dic.clear()
 print(dic)
+
+#집합 만들기
+s1 = {1,2,'a',5}
+s2 = set([1,2,3,4,5,6])
+print(s2)
+s3 = set([4,5,6,7,8,9])
+print(s3)
+
+#교집합 연산
+print(s2 & s3)
+print(s2.intersection(s3))
+
+#합집합 연산
+print(s2 | s3)
+print(s2.union(s3))
+
+#차집합 연산
+print(s2 - s3)
+print(s3 - s2)
+print(s2.difference(s3))
+print(s3.difference(s2))
+
+#원소 한개 추가
+s2.add(7)
+print(s2)
+
+# 원소 여러 개 추가
+s2.update([6,7,8,9,10])
+print(s2)
+
+# 특정 원소 제거
+s2.remove(7)
+print(s2)
+
+s2 = set([1,2,3,4,5,6,3,1,6])
+print(s2)
+
+# 비교 연산자
+x = 3
+y = 2
+print(x == y)
+print(x != y)
+print(x >= y)
+
+# 조건의 연결
+money = 1300
+if money >= 1200 and money < 3500:
+    print('버스를 탈 수 있습니다.')
+
+#그룹 자료형의 원소인지 검사하기
+print(1 in [1,2,3])
+print(x in [1,2,3])
+print(x not in [1,2,3])
+print('a' in ['a','b','c','d'])
+print('i' not in 'Python')
+
+#아무 것도 하지 않게 설정
+if money >= 10:
+    pass
+else:
+    print('저금하자!')
+
+"""# 4.반복문"""
+
+# for 반복문1
+test_list = ['one','two','three']
+for i in test_list:
+    x = i + '!'
+    print(x)
+
+#for 반복문2
+number = 0 
+for score in [90,25,67,45,93]:
+    number += 1
+
+    if score > 60:
+        print("%d번 학셍은 합격입니다." %number)
+    else:
+        print("%d번 학생은 불합격 입니다." %number)
+
+#while 문
+i = 0
+while i < 5:
+    i += 1
+    print('*' * i)
+
+#함수 정의
+def sum1(a,b):
+    x = a + b
+    return x
+
+def sum2(*args):
+    x = 0
+    for i in args:
+        x 
