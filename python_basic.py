@@ -311,4 +311,7 @@ def sum1(a,b):
 def sum2(*args):
     x = 0
     for i in args:
-        x 
+        x += i
+    return x
+
+#함수 호출
