@@ -178,3 +178,24 @@ t2 * 10
 
 #튜플 수정(불가능)
 # t2[2] = 99    #오류발생
+
+#딕셔너리 만들기
+dic = {'name':'Hong', 'Phone':'01012345678', 'birth':'0814'}
+
+#원소 추가
+dic[1] = 'a'
+print(dic)
+
+dic['pet'] = 'dog'
+print(dic)
+
+#원소 삭제
+del dic[1]
+print(dic)
+
+#원소의 value 구하기
+print(dic['Phone'])
+print(dic['name'])
+
+#key의 리스트 만들기 
+print(dic,keys())
